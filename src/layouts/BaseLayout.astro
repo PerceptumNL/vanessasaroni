@@ -56,11 +56,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         <a href={`${base}/our-world`}>Our World</a>
         <a href={`${base}/sustainability`}>Sustainability</a>
         <a href={`${base}/mary-for-life`}>Mary for Life</a>
-        <a href={`${base}/collections`}>Shop</a>
+        <a href={`${base}/collections`}>The Bags</a>
       </nav>
 
       <div class="nav__actions">
-        <a href={`${base}/collections`} class="nav__shop-link">Shop Now</a>
+        <a href={`${base}/collections`} class="nav__shop-link">Book a Viewing</a>
       </div>
     </div>
   </header>
@@ -69,13 +69,27 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <slot />
   </main>
 
+  <!-- Inner Circle Signup -->
+  <section class="inner-circle">
+    <div class="container text-center">
+      <p class="uppercase">Join the Inner Circle</p>
+      <h2>Early Access, Private Viewings, Stories from the Studio</h2>
+      <div class="divider"></div>
+      <p class="inner-circle__text">Be the first to see new collections, get invited to private viewings in Amsterdam, and receive personal updates from Vanessa.</p>
+      <form class="inner-circle__form" action="#" method="get">
+        <input type="email" placeholder="Your email address" aria-label="Email address" required />
+        <button type="submit" class="btn">Join Us</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <h3 class="footer__logo">Vanessa Saroni</h3>
-          <p>Luxury handcrafted bags made sustainably. Each piece tells a story of artisanship, culture, and female empowerment.</p>
+          <p>Handwoven in Brazil. Crafted in Italy. Designed in Amsterdam. Each bag carries the story of the women who made it.</p>
           <div class="footer__social">
             <a href="https://instagram.com/vanessasaroni" target="_blank" rel="noopener" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
@@ -102,15 +116,15 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
         <div class="footer__links">
           <h4>Shop</h4>
-          <a href={`${base}/collections`}>All Bags</a>
-          <a href={`${base}/collections`}>Best Sellers</a>
-          <a href={`${base}/sustainability`}>Shipping</a>
-          <a href={`${base}/our-world`}>About Us</a>
+          <a href={`${base}/collections`}>All Designs</a>
+          <a href={`${base}/collections`}>The Bags</a>
+          <a href={`${base}/sustainability`}>How We Make</a>
+          <a href={`${base}/our-world`}>Our Story</a>
         </div>
 
         <div class="footer__newsletter">
           <h4>Stay Connected</h4>
-          <p>Join our world and receive 10% off your first order.</p>
+          <p>Join the inner circle. Early access, private viewings, and stories from the studio.</p>
           <form class="footer__form" action="#" method="get">
             <input type="email" placeholder="Your email" aria-label="Email address" />
             <button type="submit" class="btn btn--filled">Subscribe</button>
@@ -261,6 +275,58 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 
       .nav__actions {
         display: none;
+      }
+    }
+
+    /* Inner Circle */
+    .inner-circle {
+      padding: clamp(4rem, 8vw, 6rem) 0;
+      background: var(--color-cream);
+      text-align: center;
+    }
+
+    .inner-circle h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      max-width: 600px;
+      margin: 0 auto 0.5rem;
+    }
+
+    .inner-circle__text {
+      max-width: 500px;
+      margin: 1.5rem auto 2rem;
+      font-size: 0.95rem;
+      opacity: 0.7;
+    }
+
+    .inner-circle__form {
+      display: flex;
+      gap: 0.8rem;
+      max-width: 450px;
+      margin: 0 auto;
+    }
+
+    .inner-circle__form input {
+      flex: 1;
+      border: 1px solid var(--color-charcoal);
+      padding: 0.9rem 1.2rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      background: var(--color-warm-white);
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    .inner-circle__form input:focus {
+      border-color: var(--color-gold);
+    }
+
+    .inner-circle__form .btn {
+      white-space: nowrap;
+    }
+
+    @media (max-width: 500px) {
+      .inner-circle__form {
+        flex-direction: column;
       }
     }
 

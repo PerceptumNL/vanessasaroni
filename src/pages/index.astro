@@ -10,11 +10,11 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <img src="https://www.vanessasaroni.com/cdn/shop/files/Capodanno_1400x.jpg?v=1734195219" alt="Vanessa Saroni luxury handcrafted bag" class="hero__image" />
     <div class="hero__overlay"></div>
     <div class="hero__content">
-      <p class="uppercase hero__pre">Luxury Handcrafted Bags</p>
+      <p class="uppercase hero__pre">Born in Brazil · Made in Italy · Designed in Amsterdam</p>
       <h1>Bold & Brave</h1>
       <div class="divider" style="background: var(--color-warm-white);"></div>
-      <p class="hero__sub">Artisan-woven fabrics from Brazil, designed with Italian elegance. Each piece tells a story.</p>
-      <a href={`${base}/collections`} class="btn hero__btn">Shop the Collection</a>
+      <p class="hero__sub">Handwoven by women artisans, crafted into luxury. No two pieces are exactly alike.</p>
+      <a href={`${base}/collections`} class="btn hero__btn">Discover the Collection</a>
     </div>
   </section>
 
@@ -23,19 +23,19 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     <div class="container">
       <div class="values-grid fade-in">
         <div class="values-grid__item">
-          <h3>Made Sustainably</h3>
+          <h3>Woven by Hand</h3>
           <div class="divider"></div>
-          <p>Conscious design throughout the entire product cycle, minimizing environmental impact at every step.</p>
+          <p>Each metre of fabric takes a full day to produce. Our artisans in Brazil weave every thread on traditional looms, by hand.</p>
         </div>
         <div class="values-grid__item">
-          <h3>Hand Woven</h3>
+          <h3>Made by Women</h3>
           <div class="divider"></div>
-          <p>Our fabrics are produced by talented Brazilian artisans using traditional manual weaving techniques.</p>
+          <p>This brand exists because of the women who weave, who design, who build. Their skill and independence are woven into every bag.</p>
         </div>
         <div class="values-grid__item">
-          <h3>For Women</h3>
+          <h3>Built to Last</h3>
           <div class="divider"></div>
-          <p>Every bag sold supports women's autonomy and creates opportunities in communities worldwide.</p>
+          <p>We design for years, not seasons. Handwoven cotton, Italian craftsmanship, and materials that age beautifully.</p>
         </div>
       </div>
     </div>
@@ -84,9 +84,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <section class="quote">
     <div class="container">
       <blockquote class="fade-in">
-        "I wish each piece tells a story and stirs emotion."
+        "The imperfections are not flaws. They are proof that a person made this, not a machine."
       </blockquote>
-      <cite>Vanessa Saroni, Founder</cite>
+      <cite>Vanessa Saroni</cite>
     </div>
   </section>
 
@@ -99,9 +99,9 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
         </div>
         <div class="content-block__text">
           <p class="uppercase">Our World</p>
-          <h2>Made by Women, for Women</h2>
-          <p>While the designs are an expression of Vanessa herself, it's the collaboration with other artists which is key to her approach — the connection and friendship is what really motivates her, and this mosaic of cultures is reflected in the brand.</p>
-          <a href={`${base}/our-world`} class="btn">Discover Our Story</a>
+          <h2>A Mosaic of Cultures</h2>
+          <p>My designs begin in Amsterdam, draw from my Brazilian roots, and come to life in Italian workshops. But really, they start with the women I work with. The artisans, the artists, the friends. That connection is what makes each piece what it is.</p>
+          <a href={`${base}/our-world`} class="btn">Meet the Women Behind the Brand</a>
         </div>
       </div>
     </div>
@@ -110,42 +110,46 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   <!-- Featured Products -->
   <section class="section featured-products" style="background: var(--color-cream);">
     <div class="container text-center">
-      <p class="uppercase">Treat Yourself</p>
-      <h2>Best Sellers</h2>
+      <p class="uppercase">Meet the Bags</p>
+      <h2>Each One Has a Name</h2>
       <div class="divider"></div>
     </div>
     <div class="container products-grid fade-in">
-      <a href={`${base}/collections/tartan`} class="product-card img-hover">
+      <a href={`${base}/bags/juju`} class="product-card img-hover">
         <img src="https://www.vanessasaroni.com/cdn/shop/files/Juju_tartan_collection_vanessa_saroni_535831b3-8057-403e-8f79-3693254f8577_1400x.jpg?v=1614326105" alt="JUJU bag" loading="lazy" />
         <div class="product-card__info">
           <h4>Juju</h4>
+          <p class="product-card__tagline">Class used to be priceless.</p>
           <span>From &euro;675</span>
         </div>
       </a>
-      <a href={`${base}/collections/tartan`} class="product-card img-hover">
+      <a href={`${base}/bags/lola`} class="product-card img-hover">
         <img src="https://www.vanessasaroni.com/cdn/shop/products/FW-91-890938_400x.jpg?v=1632528913" alt="LOLA bag" loading="lazy" />
         <div class="product-card__info">
           <h4>Lola</h4>
+          <p class="product-card__tagline">Effortless. Always.</p>
           <span>From &euro;595</span>
         </div>
       </a>
-      <a href={`${base}/collections/piano`} class="product-card img-hover">
+      <a href={`${base}/bags/duda`} class="product-card img-hover">
         <img src="https://www.vanessasaroni.com/cdn/shop/products/VanessaSaroni_20220719_E-Commerce_53-2_400x.jpg?v=1665649996" alt="DUDA bag" loading="lazy" />
         <div class="product-card__info">
           <h4>Duda</h4>
+          <p class="product-card__tagline">For the woman who carries her world with her.</p>
           <span>From &euro;645</span>
         </div>
       </a>
-      <a href={`${base}/collections/piano`} class="product-card img-hover">
+      <a href={`${base}/bags/karol`} class="product-card img-hover">
         <img src="https://www.vanessasaroni.com/cdn/shop/products/FW-11-316104_400x.jpg?v=1632788509" alt="KAROL 3-in-1 bag" loading="lazy" />
         <div class="product-card__info">
           <h4>Karol</h4>
+          <p class="product-card__tagline">3 bags in 1. What else?</p>
           <span>From &euro;595</span>
         </div>
       </a>
     </div>
     <div class="container text-center" style="margin-top: 3rem;">
-      <a href={`${base}/collections`} class="btn">View All Bags</a>
+      <a href={`${base}/collections`} class="btn">Explore All Designs</a>
     </div>
   </section>
 
@@ -157,10 +161,10 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <img src={`${base}/images/our-women-2.jpg`} alt="Brazilian artisan weaving fabric" loading="lazy" />
         </div>
         <div class="content-block__text">
-          <p class="uppercase">Sustainability</p>
-          <h2>Crafted with Conscience</h2>
-          <p>We use only sustainable fabrics manufactured with minimal environmental impact. The manufacture of our fabrics is 100% handwoven, ethically sourced, reducing the need for excessive electricity and water use.</p>
-          <a href={`${base}/sustainability`} class="btn">Our Commitment</a>
+          <p class="uppercase">How We Make</p>
+          <h2>No Factories. Just Hands.</h2>
+          <p>Our fabrics are 100% handwoven. No industrial looms, no excess electricity, no water waste. When you hold one of our bags, you are holding hours of someone's focused, skilled, quiet work.</p>
+          <a href={`${base}/sustainability`} class="btn">How It All Comes Together</a>
         </div>
       </div>
     </div>
@@ -317,6 +321,13 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
   .product-card__info h4 {
     font-family: var(--font-serif);
     font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .product-card__tagline {
+    font-style: italic;
+    font-size: 0.85rem;
+    opacity: 0.6;
     margin-bottom: 0.3rem;
   }
 

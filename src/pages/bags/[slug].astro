@@ -70,16 +70,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
           <div class="divider"></div>
           <p>Tell me a bit about yourself and I will get back to you personally. You can also book a private viewing at our Amsterdam studio.</p>
         </div>
-        <form class="inquiry-form__form" action="#" method="get">
+        <form class="inquiry-form__form" data-form="inquiry">
+          <input type="hidden" name="bag" value={bag.name} />
           <input type="text" name="name" placeholder="Your name" required aria-label="Your name" />
           <input type="email" name="email" placeholder="Your email" required aria-label="Your email" />
           <select name="interest" aria-label="What are you interested in?">
-            <option value="inquire">I would like to know more about {bag.name}</option>
-            <option value="viewing">I would like to book a private viewing</option>
-            <option value="other">Something else</option>
+            <option value={`Inquiry about ${bag.name}`}>I would like to know more about {bag.name}</option>
+            <option value="Private viewing">I would like to book a private viewing</option>
+            <option value="Other">Something else</option>
           </select>
           <textarea name="message" placeholder="Anything you would like to share (optional)" rows="4" aria-label="Message"></textarea>
           <button type="submit" class="btn btn--filled">Send</button>
+          <p class="form-feedback" aria-live="polite"></p>
         </form>
       </div>
     </div>
